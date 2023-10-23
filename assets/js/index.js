@@ -47,3 +47,12 @@ $('#division').on('click', function () {
         display.text('');
     }
 });
+
+$('#muliple').on('click', function () {
+    if (display.text() !== '') {
+        oparator.text('*');
+        opt = '*';
+        firstNum = parseFloat(display.text());
+        display.text('');
+    }
+});
