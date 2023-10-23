@@ -56,3 +56,19 @@ $('#muliple').on('click', function () {
         display.text('');
     }
 });
+
+$('#equal').on('click', function () {
+    if (display.text() !== '') {
+        oparator.text('=');
+        secondNum = parseFloat(display.text());
+        if (opt === '+') {
+            display.text(firstNum + secondNum);
+        } else if (opt === '-') {
+            display.text(firstNum - secondNum);
+        } else if (opt === '*') {
+            display.text(firstNum * secondNum);
+        } else {
+            display.text(firstNum / secondNum);
+        }
+    }
+});
