@@ -28,3 +28,13 @@ $('#btnSum').on('click', function () {
         display.text('');
     }
 });
+
+$('#decrement').on('click', function () {
+    if (display.text() !== '') {
+        oparator.text('-');
+        opt = '-';
+        firstNum = parseFloat(display.text());
+        display.text('');
+    }
+
+});
