@@ -38,3 +38,12 @@ $('#decrement').on('click', function () {
     }
 
 });
+
+$('#division').on('click', function () {
+    if (display.text() !== '') {
+        oparator.text('/');
+        opt = '/';
+        firstNum = parseFloat(display.text());
+        display.text('');
+    }
+});
