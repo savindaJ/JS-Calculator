@@ -19,3 +19,12 @@ function clear() {
     firstNum = 0;
     secondNum = 0;
 }
+
+$('#btnSum').on('click', function () {
+    if (display.text() !== '') {
+        oparator.text('+');
+        opt = '+';
+        firstNum = parseFloat(display.text());
+        display.text('');
+    }
+});
