@@ -4,3 +4,14 @@ body main{
     background: url("assets/image/background-image-fixed.jpg");
     background-size: cover;
 }
+
+body main>section{
+    width: 40vw;
+    height: 100vh;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
