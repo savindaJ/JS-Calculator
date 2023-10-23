@@ -8,3 +8,7 @@ $('#button-section .num').click(function () {
     let text = $(this).children().text();
     display.text(display.text() + text);
 });
+
+$('#btnClear').on('click', function () {
+    clear();
+});
