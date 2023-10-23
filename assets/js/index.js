@@ -12,3 +12,10 @@ $('#button-section .num').click(function () {
 $('#btnClear').on('click', function () {
     clear();
 });
+
+function clear() {
+    display.text('');
+    oparator.text('');
+    firstNum = 0;
+    secondNum = 0;
+}
